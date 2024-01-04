@@ -16,7 +16,7 @@
                     </div>
                     <OutlineButton ref="learnMoreButton" class="lg:mt-20" label="Lean More" />
                 </div>
-                <div>
+                <div class="max-lg:flex items-center flex-col" >
                     <NuxtImg ref="heroImage" src="/images/innovative.svg" height="50vh" width="100vw" sizes="170px md:100px lg:200px"
                      alt="main-logo" />
                 </div>
