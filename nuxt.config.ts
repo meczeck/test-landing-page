@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           as: 'image',
-          href: '/icons/logo.png'
+          href: '/logos/logo.png'
         }
       ],
     }
@@ -23,7 +23,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
     '@nuxt/image',
-    '@element-plus/nuxt',
     '@vueuse/motion/nuxt',
   ],
 

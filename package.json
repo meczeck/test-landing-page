@@ -12,7 +12,6 @@
   "devDependencies": {
     "@element-plus/nuxt": "^1.0.7",
     "@nuxtjs/tailwindcss": "^6.10.3",
-    "element-plus": "^2.4.4",
     "nuxt": "^3.9.0",
     "nuxt-icon": "^0.6.8",
     "vue": "^3.4.3",
