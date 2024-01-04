@@ -1,5 +1,7 @@
 <template>
     <section v-if="route.path == '/'" id="hero-section">
+    <!-- <NuxtLoadingBar :duration="1000" /> -->
+
         <Header />
 
         <div

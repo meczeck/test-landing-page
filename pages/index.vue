@@ -1,4 +1,5 @@
 <template>
+
     <Title>Homepage</Title>
     <section id="partners" class="bg-[#D9D9D9] w-full py-[40px] md:py-[70px] ">
         <div class="max-w-[1200px] mx-auto max-xl:mx-[20px]">
