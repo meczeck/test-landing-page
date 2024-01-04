@@ -1,6 +1,5 @@
 <template>
     <section v-if="route.path == '/'" id="hero-section">
-    <!-- <NuxtLoadingBar :duration="1000" /> -->
 
         <Header />
 
@@ -18,9 +17,8 @@
                     <OutlineButton ref="learnMoreButton" class="lg:mt-20" label="Lean More" />
                 </div>
                 <div>
-                    <NuxtImg src="/images/innovative.svg" height="50vh" width="100vw" sizes="170px md:100px lg:200px"
-                        v-motion :initial="initialAnimation({ scale: 0.6, opacity: 0 })"
-                        :visibleOnce="finalAnimation({ stiffDuration: 100 })" alt="main-logo" />
+                    <NuxtImg ref="heroImage" src="/images/innovative.svg" height="50vh" width="100vw" sizes="170px md:100px lg:200px"
+                     alt="main-logo" />
                 </div>
             </div>
         </div>
@@ -93,6 +91,7 @@ const deleteWord = () => {
 };
 
 const learnMoreButton = ref()
+const heroImage = ref()
 onMounted(() => {
     startTypewriter();
 
@@ -100,6 +99,12 @@ onMounted(() => {
         {
             initial: initialAnimation({ yPosition: 100 }),
             visible: finalAnimation({ delayTime: 1000, stiffDuration: 100 })
+        }
+    )
+    useMotion(heroImage,
+        {
+            initial:initialAnimation({ scale: 0.6, opacity: 0 }),
+            visible:finalAnimation({ stiffDuration: 100 })
         }
     )
 
